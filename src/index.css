@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --primary-bg-color: #383838;
+  --primary-text-color: rgb(241, 241, 241);
+  --primary-card-color: #494949;
+  --primary-black: black;
+  --primary-green-view-color: #55E5A4;
+  --primary-home-contact-color: #D3E97A;
+}
+
+[data-theme='light'] {
+  --primary-bg-color: rgb(241, 241, 241);
+  --primary-text-color: black;
+  --primary-card-color: rgb(241, 241, 241);
+  --primary-black: black;
+  --primary-green-view-color: #55E5A4;
+  --primary-home-contact-color: #D3E97A;
+}
+
+* {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: "Lateef", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Lateef", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.shiv,
+.projects,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.home_contact_button {
+  background-color: var(--primary-home-contact-color);
+  color: var(--primary-black);
+}
+
+.view_all {
+  background-color: var(--primary-green-view-color);
+  border-color: var(--primary-black);
+  color: var(--primary-black);
+}
+
+.background_color {
+  background-color: var(--primary-card-color);
+}
+
+.card_border {
+  border-color: var(--primary-text-color);
+}
