@@ -6,11 +6,11 @@ import github from '../assets/social/github.svg'
 const Home = () => {
   return (
 
-    <div className='flex flex-row justify-evenly items-center py-28' id='home'>
+    <div className='flex flex-row flex-wrap justify-evenly items-center py-28 gap-10' id='home'>
 
-      <div className='flex flex-col gap-5'>
-        <div className='flex'>
-          <span className='shiv uppercase text-5xl'>
+      <div className='flex flex-col items-center gap-5'>
+        <div className='flex items-center'>
+          <span className='shiv uppercase text-5xl p-3'>
             hi, i am <br></br>
             Shiv Chauhan.
           </span>

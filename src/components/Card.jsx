@@ -41,7 +41,7 @@ const Card = () => {
     }
 
     return (
-        <div className="flex flex-wrap gap-7 justify-center">
+        <div className="flex flex-wrap gap-10 justify-center">
 
             {values.map((value, index) => (
 

@@ -64,3 +64,36 @@ h2 {
 .card_border {
   border-color: var(--primary-text-color);
 }
+
+
+
+/* Navbar */
+
+/* resize nav */
+@media (max-width: 490px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
+
+/* toggle icon */
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+}
+
+@media (min-width: 700px) {
+  .menu {
+    display: flex;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+}
