@@ -7,16 +7,25 @@ import css from '../assets/technologies/css.svg'
 import js from '../assets/technologies/js.svg'
 import react from '../assets/technologies/react.svg'
 import firebase from '../assets/technologies/firebase.svg'
+import tailwind from '../assets/technologies/tailwind.svg'
 
 const Card = () => {
     const [values, setValues] = useState([
         {
-            img: "https://play-lh.googleusercontent.com/WF4qXzM7bWiqMj3UhC6uIT0r1no86K5fNRVIAAhebknV4gMyxTPdPCH4gr0VIX58fV6Q=w240-h480-rw",
-            name: "CSE Notes",
-            description: "Notes Application for CSE students to find quality notes. It has more than 10,000+ Downloads on Play Store.",
-            tech: [android, java],
-            codeLink: "https://github.com/shivchauhan795/CSE-Notes",
-            liveLink: "https://play.google.com/store/apps/details?id=com.shivchauhan.csenotes&hl=en_IN&gl=US",
+            img: "https://keyshield.netlify.app/assets/logo-BFPI99lc.svg",
+            name: "KeyShield",
+            description: "Your Trusted Password Manager",
+            tech: [html, css, react, vscode, tailwind],
+            codeLink: "https://github.com/shivchauhan795/KeyShield",
+            liveLink: "https://keyshield.netlify.app/",
+        },
+        {
+            img: "https://github.com/shivchauhan795/Chatter-Application/blob/main/src/assets/favicon.png?raw=true",
+            name: "Chatter Application",
+            description: "A Chat Application with Custom Room ID. Login with Google Sign In. Real Time Synchronization of chats.",
+            tech: [html, css, react, firebase],
+            codeLink: "https://github.com/shivchauhan795/Chatter-Application",
+            liveLink: "https://chatter-application.netlify.app/",
         },
         {
             img: "https://raw.githubusercontent.com/shivchauhan795/QR-Textify/main/favicon.ico",
@@ -27,12 +36,12 @@ const Card = () => {
             liveLink: "https://shivchauhan795.github.io/QR-Textify/",
         },
         {
-            img: "https://github.com/shivchauhan795/Chatter-Application/blob/main/src/assets/favicon.png?raw=true",
-            name: "Chatter Application",
-            description: "A Chat Application with Custom Room ID. Login with Google Sign In. Real Time Synchronization of chats.",
-            tech: [html, css, react, firebase],
-            codeLink: "https://github.com/shivchauhan795/Chatter-Application",
-            liveLink: "https://chatter-application.netlify.app/",
+            img: "https://play-lh.googleusercontent.com/WF4qXzM7bWiqMj3UhC6uIT0r1no86K5fNRVIAAhebknV4gMyxTPdPCH4gr0VIX58fV6Q=w240-h480-rw",
+            name: "CSE Notes",
+            description: "Notes Application for CSE students to find quality notes. It has more than 10,000+ Downloads on Play Store.",
+            tech: [android, java],
+            codeLink: "https://github.com/shivchauhan795/CSE-Notes",
+            liveLink: "https://play.google.com/store/apps/details?id=com.shivchauhan.csenotes&hl=en_IN&gl=US",
         },
     ]);
 
@@ -47,7 +56,7 @@ const Card = () => {
 
                 <div key={index} className='h-100 w-56 p-2 rounded-3xl border background_color card_border hover:scale-110 transition-all'>
 
-                    <img src={value.img} alt={value.name} className='size-fit border-b rounded-t-3xl h-32 w-56 background_color card_border' />
+                    <img src={value.img} alt={value.name} className='size-fit border-b rounded-t-3xl h-32 w-56 background_color card_border pb-2' />
 
                     <h2 className='text-center uppercase p-2 background_color'>{value.name}</h2>
 
