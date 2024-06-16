@@ -72,7 +72,7 @@ const Card = () => {
 
                     </div>
 
-                    <div className='flex background_color justify-evenly mt-5 mb-2'>
+                    <div className='flex background_color justify-evenly mt-5 mb-2 gap-3'>
 
                         <button onClick={() => handleClick(value.codeLink)} className='view_all border px-2 text-lg rounded hover:scale-110 transition-all'>View Code</button>
                         <button onClick={() => handleClick(value.liveLink)} className='background_color border px-2 text-lg rounded card_border hover:scale-110 transition-all'>Live Link</button>

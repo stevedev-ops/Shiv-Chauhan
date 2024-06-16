@@ -2,6 +2,7 @@ import React from 'react'
 import shiv from '../assets/shiv.jpg'
 import linkedin from '../assets/social/linkedin.svg'
 import github from '../assets/social/github.svg'
+import TypingEffect from './TypingEffect'
 
 const Home = () => {
   return (
@@ -10,9 +11,9 @@ const Home = () => {
 
       <div className='flex flex-col items-center gap-5'>
         <div className='flex items-center'>
-          <span className='shiv uppercase text-5xl p-3'>
-            hi, i am <br></br>
-            Shiv Chauhan.
+          <span className='shiv uppercase text-5xl p-3 gap-2 flex flex-col'>
+            hi, i am
+            <TypingEffect />
           </span>
         </div>
         <div className='flex flex-row gap-4'>

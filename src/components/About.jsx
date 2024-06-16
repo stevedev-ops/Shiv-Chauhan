@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
+import android from '../assets/technologies/android.svg';
+import java from '../assets/technologies/java.svg';
+import vscode from '../assets/technologies/vscode.svg';
+import html from '../assets/technologies/html.svg';
+import css from '../assets/technologies/css.svg';
+import js from '../assets/technologies/js.svg';
+import react from '../assets/technologies/react.svg';
+import firebase from '../assets/technologies/firebase.svg';
+import tailwind from '../assets/technologies/tailwind.svg';
 
 const About = () => {
+    const [tech] = useState([android, java, vscode, html, css, js, react, firebase, tailwind]);
+
     return (
         <>
             <div className='flex flex-wrap justify-evenly pt-28 my-36 gap-10' id='about'>
@@ -17,9 +28,24 @@ const About = () => {
                     science and engineering.
                 </div>
             </div>
+
+            <div className="tech flex justify-center">
+                <div className="tech_slide flex gap-24 p-4">
+                    {tech.map((tech, techIndex) => (
+                        <img key={techIndex} src={tech} alt={`tech-${techIndex}`} className='size-20 hover:scale-110 transition-all' />
+                    ))}
+                    {tech.map((tech, techIndex) => (
+                        <img key={techIndex + tech.length} src={tech} alt={`tech-${techIndex}`} className='size-20 hover:scale-110 transition-all' />
+                    ))}
+                    {tech.map((tech, techIndex) => (
+                        <img key={techIndex + tech.length * 2} src={tech} alt={`tech-${techIndex}`} className='size-20 hover:scale-110 transition-all' />
+                    ))}
+                </div>
+            </div>
+
             <hr className='my-28' />
         </>
-    )
+    );
 }
 
-export default About
+export default About;
