@@ -8,9 +8,11 @@ import js from '../assets/technologies/js.svg';
 import react from '../assets/technologies/react.svg';
 import firebase from '../assets/technologies/firebase.svg';
 import tailwind from '../assets/technologies/tailwind.svg';
+import github from '../assets/social/github.svg'
+import redux from '../assets/technologies/redux.svg'
 
 const About = () => {
-    const [tech] = useState([android, java, vscode, html, css, js, react, firebase, tailwind]);
+    const [tech] = useState([android, java, vscode, html, css, js, react, firebase, tailwind, github, redux]);
 
     return (
         <>

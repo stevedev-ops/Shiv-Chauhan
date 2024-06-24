@@ -8,14 +8,24 @@ import js from '../assets/technologies/js.svg'
 import react from '../assets/technologies/react.svg'
 import firebase from '../assets/technologies/firebase.svg'
 import tailwind from '../assets/technologies/tailwind.svg'
+import github from '../assets/social/github.svg'
+import redux from '../assets/technologies/redux.svg'
 
 const Card = () => {
     const [values, setValues] = useState([
         {
+            img: "https://tracktally.netlify.app/assets/favicon-DEfSYZkE.png",
+            name: "TrackTally",
+            description: "Your Trusted Money Tracking Website",
+            tech: [html, css, react, vscode, tailwind, github, redux],
+            codeLink: "https://github.com/shivchauhan795/TrackTally",
+            liveLink: "https://tracktally.netlify.app/",
+        },
+        {
             img: "https://keyshield.netlify.app/assets/logo-BFPI99lc.svg",
             name: "KeyShield",
             description: "Your Trusted Password Manager",
-            tech: [html, css, react, vscode, tailwind],
+            tech: [html, css, react, vscode, tailwind, github],
             codeLink: "https://github.com/shivchauhan795/KeyShield",
             liveLink: "https://keyshield.netlify.app/",
         },
@@ -23,7 +33,7 @@ const Card = () => {
             img: "https://github.com/shivchauhan795/Chatter-Application/blob/main/src/assets/favicon.png?raw=true",
             name: "Chatter Application",
             description: "A Chat Application with Custom Room ID. Login with Google Sign In. Real Time Synchronization of chats.",
-            tech: [html, css, react, firebase],
+            tech: [html, css, react, firebase, github],
             codeLink: "https://github.com/shivchauhan795/Chatter-Application",
             liveLink: "https://chatter-application.netlify.app/",
         },
@@ -31,7 +41,7 @@ const Card = () => {
             img: "https://raw.githubusercontent.com/shivchauhan795/QR-Textify/main/favicon.ico",
             name: "QR Textify",
             description: "A Tool that converts text into a customizable QR Code. It is fully customizable and saved in different formats. ",
-            tech: [html, css, js, vscode],
+            tech: [html, css, js, vscode, github],
             codeLink: "https://github.com/shivchauhan795/QR-Textify",
             liveLink: "https://shivchauhan795.github.io/QR-Textify/",
         },
@@ -39,7 +49,7 @@ const Card = () => {
             img: "https://play-lh.googleusercontent.com/WF4qXzM7bWiqMj3UhC6uIT0r1no86K5fNRVIAAhebknV4gMyxTPdPCH4gr0VIX58fV6Q=w240-h480-rw",
             name: "CSE Notes",
             description: "Notes Application for CSE students to find quality notes. It has more than 10,000+ Downloads on Play Store.",
-            tech: [android, java],
+            tech: [android, java, github],
             codeLink: "https://github.com/shivchauhan795/CSE-Notes",
             liveLink: "https://play.google.com/store/apps/details?id=com.shivchauhan.csenotes&hl=en_IN&gl=US",
         },
@@ -64,7 +74,7 @@ const Card = () => {
 
                     <h2 className='text-center uppercase text-sm p-2 mt-3 background_color'>Technologies Used</h2>
 
-                    <div className='flex gap-2 justify-center background_color'>
+                    <div className='flex flex-wrap gap-2 justify-center background_color'>
 
                         {value.tech.map((tech, techIndex) => (
                             <img key={techIndex} src={tech} alt={`tech-${techIndex}`} className='size-8 background_color hover:scale-110 transition-all' />
