@@ -17,7 +17,7 @@ import nodejs from '../assets/technologies/nodejs.svg'
 const Card = () => {
     const [values, setValues] = useState([
         {
-            img: "https://github.com/shivchauhan795/Selectify/blob/main/favicon.png",
+            img: "https://selectify.netlify.app/assets/favicon-CJHnA_K7.png",
             name: "Selectify",
             description: "A Tool that helps photographers to get photos selected",
             tech: [html, css, react, vscode, tailwind, github, redux, firebase, mongo, nodejs, postman],
@@ -25,7 +25,7 @@ const Card = () => {
             liveLink: "https://selectify.netlify.app/",
         },
         {
-            img: "https://github.com/shivchauhan795/Eventoz/blob/main/favicon.png",
+            img: "https://eventoz.netlify.app/assets/favicon-D1-h0gBE.png",
             name: "Eventoz",
             description: "Your own Event Handler",
             tech: [html, css, react, vscode, tailwind, github, redux, mongo, nodejs, postman],
