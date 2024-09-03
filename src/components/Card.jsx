@@ -10,14 +10,33 @@ import firebase from '../assets/technologies/firebase.svg'
 import tailwind from '../assets/technologies/tailwind.svg'
 import github from '../assets/social/github.svg'
 import redux from '../assets/technologies/redux.svg'
+import postman from '../assets/technologies/postman.svg'
+import mongo from '../assets/technologies/mongo.svg'
+import nodejs from '../assets/technologies/nodejs.svg'
 
 const Card = () => {
     const [values, setValues] = useState([
         {
+            img: "https://github.com/shivchauhan795/Selectify/blob/main/favicon.png",
+            name: "Selectify",
+            description: "A Tool that helps photographers to get photos selected",
+            tech: [html, css, react, vscode, tailwind, github, redux, firebase, mongo, nodejs, postman],
+            codeLink: "https://github.com/shivchauhan795/Selectify",
+            liveLink: "https://selectify.netlify.app/",
+        },
+        {
+            img: "https://github.com/shivchauhan795/Eventoz/blob/main/favicon.png",
+            name: "Eventoz",
+            description: "Your own Event Handler",
+            tech: [html, css, react, vscode, tailwind, github, redux, mongo, nodejs, postman],
+            codeLink: "https://github.com/shivchauhan795/Eventoz",
+            liveLink: "https://eventoz.netlify.app/",
+        },
+        {
             img: "https://tracktally.netlify.app/assets/favicon-DEfSYZkE.png",
             name: "TrackTally",
             description: "Your Trusted Money Tracking Website",
-            tech: [html, css, react, vscode, tailwind, github, redux],
+            tech: [html, css, react, vscode, tailwind, github, redux, postman],
             codeLink: "https://github.com/shivchauhan795/TrackTally",
             liveLink: "https://tracktally.netlify.app/",
         },
