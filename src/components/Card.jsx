@@ -17,6 +17,14 @@ import nodejs from '../assets/technologies/nodejs.svg'
 const Card = () => {
     const [values, setValues] = useState([
         {
+            img: "https://enlacee.vercel.app/assets/favicon-vmh91X9M.gif",
+            name: "Enlacee",
+            description: "Your own URL Shortner",
+            tech: [html, css, react, vscode, tailwind, github, mongo, nodejs, postman],
+            codeLink: "https://github.com/shivchauhan795/Enlacee",
+            liveLink: "https://enlacee.vercel.app/",
+        },
+        {
             img: "https://selectify.netlify.app/assets/favicon-CJHnA_K7.png",
             name: "Selectify",
             description: "A Tool that helps photographers to get photos selected",
