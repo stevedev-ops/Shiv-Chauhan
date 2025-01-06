@@ -9,9 +9,9 @@ const Home = () => {
 
     <div className='flex flex-row flex-wrap justify-evenly items-center py-28 gap-10' id='home'>
 
-      <div className='flex flex-col items-center gap-5'>
+      <div className='flex flex-col items-start gap- p-2'>
         <div className='flex items-center'>
-          <span className='shiv uppercase text-5xl p-3 gap-2 flex flex-col'>
+          <span className='shiv uppercase text-5xl p-3 gap-2 flex flex-col w-[450px] h-32'>
             hi, i am
             <TypingEffect />
           </span>
