@@ -6,7 +6,7 @@ const TypingEffect = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [typingSpeed, setTypingSpeed] = useState(150);
 
-    const phrases = ["Shiv Chauhan", " A Developer"];
+    const phrases = ["June", " A Developer"];
 
     useEffect(() => {
         const handleTyping = () => {

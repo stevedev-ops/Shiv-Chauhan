@@ -17,9 +17,9 @@ const Home = () => {
           </span>
         </div>
         <div className='flex flex-row gap-4'>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shivchauhan.contact@gmail.com" target='_blank'><button className='home_contact_button uppercase border rounded-full w-40 h-14 card_border hover:scale-110 transition-all'>contact me</button></a>
-          <a href="https://www.linkedin.com/in/shivchauhan795/" target='_blank'><img src={linkedin} alt="linkedin" className='hover:scale-110 transition-all' /></a>
-          <a href="https://github.com/shivchauhan795/" target='_blank'><img src={github} alt="github" className='hover:scale-110 transition-all' /></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=june.contact@gmail.com" target='_blank'><button className='home_contact_button uppercase border rounded-full w-40 h-14 card_border hover:scale-110 transition-all'>contact me</button></a>
+          <a href="https://www.linkedin.com/in/june/" target='_blank'><img src={linkedin} alt="linkedin" className='hover:scale-110 transition-all' /></a>
+          <a href="https://github.com/june/" target='_blank'><img src={github} alt="github" className='hover:scale-110 transition-all' /></a>
         </div>
       </div>
 
